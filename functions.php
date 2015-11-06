@@ -131,6 +131,18 @@ add_action( 'wp_enqueue_scripts', 'yuru2cafe_scripts' );
  */
 require get_template_directory() . '/inc/custom-header.php';
 
+$yuru2_branding = array(
+	'flex-width'    => true,
+	'width'         => 1000,
+	'height'        => 250,
+  'flex-height' => true,
+  'flex-width' => true,
+  'uploads' => true,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+);
+
+add_theme_support( 'custom-header', $yuru2_branding );
+
 /**
  * Custom template tags for this theme.
  */

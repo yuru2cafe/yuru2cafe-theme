@@ -73,6 +73,8 @@
       <div class="large-12 columns">
       <!-- Foundation Grid 12 Units  -->
 
+	<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div id="left-off-canvas-toggle"><a class="left-off-canvas-toggle" href="#" >Menu</a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
