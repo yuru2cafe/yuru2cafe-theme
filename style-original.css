@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+# Layout　＊ページ全体のレイアウトを色分けしています。
+--------------------------------------------------------------*/
+header {
+  background: #ffc; }
+  header .row {
+    background: #cc9; }
+
+#gloval-navigation {
+  background: #fc0; }
+  #gloval-navigation .gloval-navigation {
+    background: #c90; }
+  #gloval-navigation .main-navigation {
+    background: #c90; }
+
+#content {
+  background: #fcc; }
+
+#content-row {
+  background: #ccc; }
+  #content-row #primary {
+    background: #fcf; }
+    #content-row #primary .columns {
+      background: #c9c; }
+  #content-row #secondary {
+    background: #9ff; }
+  #content-row .columns {
+    background: #6cc; }
+
+footer {
+  background: #fc0; }
+  footer .row {
+    background: #c90; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS P Gothic", "Osaka", sans-serif; }
+
+.left-off-canvas-menu a {
+  color: #fff; }
+.left-off-canvas-menu li {
+  list-style-type: none; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+.site-title {
+  font-size: 2rem; }
+
+.home h1.entry-title {
+  display: none; }
+
+.home h2 {
+  font-size: 1.6rem; }
+
+h2.widget-title {
+  font-size: 1.6rem; }
+
+/*--------------------------------------------------------------
+# main-navi
+--------------------------------------------------------------*/
+@media only screen and (min-width: 40.063em) {
+  #left-off-canvas-toggle {
+    display: none;
+    visibility: hidden;
+    background: #ccc; } }
+.main-navigation {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  clear: both;
+  text-transform: uppercase;
+  background: #ccc; }
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  padding: 1.3em 1em;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.3em;
+  color: white; }
+
+.main-navigation ul ul {
+  float: left;
+  position: absolute;
+  background: #999;
+  left: -999em;
+  z-index: 99999; }
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0; }
+
+.main-navigation ul ul a {
+  width: 200px; }
+
+.main-navigation li:hover > a {
+  color: #fff;
+  background: #999; }
+
+.main-navigation ul ul a:hover {
+  background: #ccc; }
+
+.main-navigation ul li:hover > ul {
+  left: auto; }
+
+.main-navigation ul ul li:hover > ul {
+  left: 100%; }
+
+/*# sourceMappingURL=style-original.css.map */
